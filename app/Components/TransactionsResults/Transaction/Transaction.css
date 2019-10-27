@@ -1,0 +1,9 @@
+.transactionWrapper{
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transactionWrapper > .values{
+    min-width: 200px;
+}

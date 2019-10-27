@@ -1,0 +1,10 @@
+.transactionHeading{
+    margin-bottom: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transactionHeading > .label{
+    min-width: 200px;
+}

@@ -1,0 +1,17 @@
+.transactionResults{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    padding: 1em;
+    overflow: scroll;
+}
+
+.filters{
+    width: 20%;
+}
+
+.heading{
+    border-bottom: 1px solid darkgrey;
+    padding: 1em;
+    font-size: larger;
+}
