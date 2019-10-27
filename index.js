@@ -9,12 +9,14 @@ import App from './app/app';
 import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import transReducer from './app/Store/Reducers/transactions';
+import transDetailsReducer from './app/Store/Reducers/transactionDetails';
 import {combineReducers, createStore, applyMiddleware, compose} from 'redux';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-    transaction: transReducer
+    transaction: transReducer,
+    transactionDetails: transDetailsReducer
 });
 
 const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
