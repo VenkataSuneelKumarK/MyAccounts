@@ -10,7 +10,7 @@ const filter = props =>{
         <div className="filter">
             {props.filter.label}
             <div>
-                {props.filter.values.map( (value, index) => <CheckBox value={value} key={value.id + index}/>)}
+                {props.filter.values.map( (value, index) => <CheckBox value={value} key={value.id + index} onchange={props.onchange} filterKey={props.filterKey}/>)}
             </div>
         </div>
     )

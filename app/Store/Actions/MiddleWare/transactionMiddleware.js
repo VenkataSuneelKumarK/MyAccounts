@@ -16,6 +16,12 @@ export const getTransactions = () => {
     };
 };
 
+export const updateFilterWithTransactions = (filter) => {
+  return dispatch => {
+      console.log("filter", filter);
+  }
+};
+
 const updateTransaction = (data) => {
   return {
         type: actionTypes.GET_TRANSACTIONS,
