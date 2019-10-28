@@ -10,8 +10,6 @@ import Filter from '../Filter/Filter';
 import './Filters.css';
 function filters(props) {
     const onChangeHandler = (event) => {
-
-        console.log('event', event.target.getAttribute("id"));
         props.updateFilters(event.target.getAttribute("id"));
     };
     return(

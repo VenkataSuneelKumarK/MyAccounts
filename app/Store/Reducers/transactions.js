@@ -119,14 +119,11 @@ const reducer = (state = initialState, action) => {
 
 const getUpdatedFilters = (filters, filterToUpdate) => {
     var filterData = filterToUpdate.split("&");
-    console.log("filterData", filterData);
     return filters.map(filter => {
         if(filter.key === filterData[0]){
-            filter.selectedValue = ""
-            console.log("found the filter group");
+            filter.selectedValue = "";
             filter.values.forEach(f => {
                 if(f.id === filterData[1]){
-                    console.log("found the filter ");
                     f.isChecked = !f.isChecked;
                 }
                 if(f.isChecked){
@@ -137,7 +134,6 @@ const getUpdatedFilters = (filters, filterToUpdate) => {
                 }
             })
         }
-        console.log('filter flsjflsl', filter);
         return filter;
 
     });

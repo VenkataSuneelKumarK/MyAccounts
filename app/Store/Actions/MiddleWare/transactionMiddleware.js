@@ -23,7 +23,6 @@ export const updateFilterWithTransactions = (filter) => {
           type: actionTypes.UPDATE_TRANS_DETAILS,
           filter: filter
       });
-      console.log("filter", filter);
   }
 };
 
