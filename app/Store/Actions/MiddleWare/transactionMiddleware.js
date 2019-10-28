@@ -8,7 +8,6 @@ export const getTransactions = () => {
     return dispatch => {
         axios.get( 'getTransaction' )
             .then( response => {
-                // console.log("response.data", response.data);
                 dispatch(updateTransaction(response.data));
             } )
             .catch( error => {

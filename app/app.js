@@ -13,7 +13,6 @@ class App extends React.Component{
             <React.Fragment>
                 <Layout>
                     <Switch>
-
                         <Route path='/transdetails' component={TransactionDetails}/>
                         <Route path='/' exact component={MyTransactions}/>
                     </Switch>
