@@ -1,5 +1,9 @@
 .filter{
-    margin: 1em;
+    margin: 1em 3em 1em 0em;
     background-color: lightgray;
     line-height: 1.5;
+    padding-left: 1em;
+}
+.filter label{
+    padding-left: 6px;
 }
