@@ -48,7 +48,7 @@ function returnData(pathname, query, response) {
     // Write the content of the file to response body
     if(query.account){
        var data = getRespectiveTransaction(query.account);
-        response.write(JSON.stringify(data.slice(0, 100)));
+        response.write(JSON.stringify(data));
     }else{
         response.write(JSON.stringify(fileData.transactions.slice(0, 100)));
     }

@@ -12,7 +12,10 @@ const reducer = (state = initialState, action) => {
         case actionTypes.GET_TRANS_DETAILS :
             return state;
         case actionTypes.UPDATE_TRANS_DETAILS :
-            return state;
+            return {
+                ...state,
+                details:action.transaction
+            };
         default:
             return state;
     }

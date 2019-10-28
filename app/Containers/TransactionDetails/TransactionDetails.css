@@ -1,0 +1,11 @@
+.transactionDetailHeading{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1em;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.details{
+    padding: 1em;
+    line-height: 1.5;
+}

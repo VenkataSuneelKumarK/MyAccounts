@@ -5,12 +5,16 @@ import React from 'react';
 import TransactionHeading from './TransactionHeading/TransactionHeading';
 import Transaction from './Transaction/Transaction';
 import { withRouter } from "react-router";
+import {connect} from 'react-redux';
+import {updateTransactionDetail} from '../../Store/Actions/MiddleWare/transDetailMW';
 
 function transactionResults(props) {
 
     const onClickHandler = (event) =>{
         let target = event.target.getAttribute("id");
+        let account = event.target.innerHTML;
         if(target){
+            props.updateTransDetails(account);
             props.history.push('/transdetails');
         }
     };
@@ -23,5 +27,9 @@ function transactionResults(props) {
         </div>
     )
 }
-
-export default withRouter(transactionResults);
+const mapDispatchToProps = dispatch =>{
+  return {
+      updateTransDetails: (account) => dispatch(updateTransactionDetail('account=' +account))
+  }
+};
+export default withRouter(connect(null, mapDispatchToProps)(transactionResults));
