@@ -14,8 +14,8 @@ function transactionResults(props) {
         let target = event.target.getAttribute("id");
         let account = event.target.innerHTML;
         if(target){
-            props.updateTransDetails(account);
-            props.history.push('/transdetails');
+            props.updateTransDetails(account, props.history);
+            // props.history.push('/transdetails');
         }
     };
     return(
@@ -29,7 +29,7 @@ function transactionResults(props) {
 }
 const mapDispatchToProps = dispatch =>{
   return {
-      updateTransDetails: (account) => dispatch(updateTransactionDetail('account=' +account))
+      updateTransDetails: (account, history) => dispatch(updateTransactionDetail('account=' +account, history))
   }
 };
 export default withRouter(connect(null, mapDispatchToProps)(transactionResults));

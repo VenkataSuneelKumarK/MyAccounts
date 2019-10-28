@@ -8,7 +8,9 @@ import './TransactionDetails.css';
 
 class TransactionDetails extends React.Component{
     componentDidMount(){
-
+        if(!this.props.details){
+            this.props.history.push('/');
+        }
     }
     render(){
         return(
