@@ -14,6 +14,7 @@ function transactionResults(props) {
         let target = event.target.getAttribute("id");
         let account = event.target.innerHTML;
         if(target){
+            console.log("account", account);
             props.updateTransDetails(account, props.history);
             // props.history.push('/transdetails');
         }

@@ -104,7 +104,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 transactions: action.transactions
             };
-        case actionTypes.UPDATE_TRANS_DETAILS :
+        case actionTypes.UPDATE_TRANS_BY_FILTER :
             return {
                 ...state,
                 filters: getUpdatedFilters(state.filters, action.filter)

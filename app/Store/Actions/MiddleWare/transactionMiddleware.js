@@ -20,7 +20,7 @@ export const updateFilterWithTransactions = (filter) => {
     //Need to write code for the transactions based on the filters, so wrote code like this
   return dispatch => {
       dispatch({
-          type: actionTypes.UPDATE_TRANS_DETAILS,
+          type: actionTypes.UPDATE_TRANS_BY_FILTER,
           filter: filter
       });
   }
