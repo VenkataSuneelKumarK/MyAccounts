@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CheckBox/> should snapshot 1`] = `
+<div>
+  <input
+    checked={false}
+    id="Account&1"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    htmlFor="Account&1"
+  >
+    Saving Account
+  </label>
+</div>
+`;
